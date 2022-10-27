@@ -1,0 +1,91 @@
+<form id="form-add-profile">
+
+	<div class="form-group">
+		<label class="col-form-label">Nama</label> <input type="text"
+			class="form-control " name="nama" />
+	</div>
+
+	<div class="form-group">
+		<label class="col-form-label">Pendidikan</label> <input type="text"
+			class="form-control " name="pendidikan" />
+	</div>
+
+	<div class="form-group">
+		<label class="col-form-label">Tahun Lulus</label> <input type="text"
+			class="form-control " name="tahunLulus" />
+	</div>
+
+	<div class="form-group">
+		<label class="col-form-label">Jenis Kelamin</label>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="idGender"
+				id="idGender" value="1"> <label class="form-check-label"
+				for="idGender"> Pria </label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="idGender"
+				id="idGender" value="2"> <label class="form-check-label"
+				for="idGender"> Wanita </label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-form-label">Nomor Telepon</label> <input type="text"
+			class="form-control " name="noTelp" />
+	</div>
+
+	<div class="form-group">
+
+		<div class="form-group">
+			<label class="col-form-label">Skill</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill1"
+				value="1" id="idSkill1"> <label class="form-check-label"
+				for="idSkill1"> Java </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill2"
+				value="2" id="idSkill2"> <label class="form-check-label"
+				for="idSkill2"> PHP </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill3"
+				value="3" id="idSkill3"> <label class="form-check-label"
+				for="idSkill3"> Golang </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill4"
+				value="4" id="idSkill4"> <label class="form-check-label"
+				for="idSkill4"> React.js </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill5"
+				value="5" id="idSkill5"> <label class="form-check-label"
+				for="idSkill5"> C# </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill6"
+				value="6" id="idSkill6"> <label class="form-check-label"
+				for="idSkill6"> Kotlin </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill7"
+				value="7" id="idSkill7"> <label class="form-check-label"
+				for="idSkill7"> Swift </label>
+		</div>
+
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" name="idSkill8"
+				id="idSkill8" onclick="otherCheckBox();"> <label
+				class="form-check-label" for="idSkill8"> Other </label>
+		</div>
+		<input type="text" class="form-control form-control-sm" name="other"
+			id="other" style="display: none" placeholder="Masukkan Skill" />
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-secondary"
+			data-bs-dismiss="modal">Close</button>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+</form>

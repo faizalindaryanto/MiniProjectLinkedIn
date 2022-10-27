@@ -1,0 +1,23 @@
+<tr th:each="item:${bungkuslahData}">
+	<td th:text="${item.nama}"></td>
+	<td th:text="${item.pendidikan}"></td>
+	<td th:text="${item.tahunLulus}"></td>
+	<td th:text="${item.namaGender}"></td>
+	<td th:text="${item.noTelp}"></td>
+	<td><span th:if="${item.skill1 != null}"
+		th:text="'-'+${item.skill1}"></span> <!-- <br th:unless="${item.skill1 == null}"> -->
+
+		<span th:if="${item.skill2 != null}" th:text="'-'+${item.skill2}"></span>
+		<!-- <br th:unless="${item.skill2 == null}"> --> <span
+		th:if="${item.skill3 != null}" th:text="'-'+${item.skill3}"></span></td>
+
+
+	<td>
+		<button th:value="${item.idProfile}" id="btn-edit"
+			class="btn btn-info">Edit</button>
+		<button th:value="${item.idProfile}" id="btn-delete"
+			class="btn btn-danger">Delete</button> <!-- <button th:value="${item.idProfile}" id="btn-info"
+			class="btn btn-secondary">Info</button> -->
+	</td>
+
+</tr>

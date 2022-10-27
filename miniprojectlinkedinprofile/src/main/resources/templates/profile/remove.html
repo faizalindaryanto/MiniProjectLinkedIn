@@ -1,0 +1,15 @@
+<div class="form-horizontal">
+	<form method="get" id="form-profile-delete">
+		<p>Apakah Anda yakin ingin menghapus data ini?</p>
+
+		<input th:value="${bingkisanDelete.idProfile}" type="text" id="id"
+			name="id" style="display: none" />
+
+		<div class="modal-footer">
+			<button type="submit" class="btn btn-success">Yes</button>
+			<button type="reset" data-bs-dismiss="modal" class="btn btn-danger">No</button>
+		</div>
+
+	</form>
+
+</div>
